@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holocron</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-        />
-    </head>
-    <body>
-        <div class="section header mb-5">
-      <img class="image is-fullwidth"
-        src="Assets/images/text-Star_Wars_Actor_Holocron.png"
-        alt="Star Wars Font Text of Star Wars Actor Holocron"
-        width="1500"
-      />
-    </div>
-        <main>
-			<div id="episodeChoice1" class="container is-widescreen notification mb-5">
-				<div>Our Star Wars Universe</div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Holocron</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+		/>
+	</head>
+	<body>
+		<div class="section header mb-5">
+			<img
+				class="image is-fullwidth"
+				src="Assets/images/text-Star_Wars_Actor_Holocron.png"
+				alt="Star Wars Font Text of Star Wars Actor Holocron"
+				width="1500"
+			/>
+		</div>
+		<main>
+			<div
+				id="episodeChoice1"
+				class="container is-widescreen notification mb-5"
+			>
+				<div class="has-text-centered is-size-1">Our Star Wars Universe</div>
 				<div class="columns">
-					<p class="column">
-						<img src = "./Assets/images/Episode I.jpg">
+					<p id="Ep1" class="column">
+						<img src="./Assets/images/Episode I.jpg" />
 					</p>
-					<p class="column">
-						<img src = "./Assets/images/Episode II.jpg">
+					<p id="Ep2" class="column">
+						<img src="./Assets/images/Episode II.jpg" />
 					</p>
-					<p class="column">
-						<img src = "./Assets/images/Episode III.jpg">
+					<p id="Ep3" class="column">
+						<img src="./Assets/images/Episode III.jpg" />
 					</p>
-					<p class="column"> 
-						<img src = "./Assets/images/Episode IV.jpg">
+					<p id="Ep4" class="column">
+						<img src="./Assets/images/Episode IV.jpg" />
 					</p>
-					<p class="column">
-						<img src = "./Assets/images/Episode V.jpg">
+					<p id="Ep5" class="column">
+						<img src="./Assets/images/Episode V.jpg" />
 					</p>
-					<p class="column">
-						<img src = "./Assets/images/Episode VI.jpg">
+					<p id="Ep6" class="column">
+						<img src="./Assets/images/Episode VI.jpg" />
 					</p>
 				</div>
-				<div id="episodeChoice1" class="container is-widescreen notification mb-5">
+				<div class="has-text-centered is-size-4">
+					Click a film poster above to learn more about that film's characters
+					and see other films about them!
+				</div>
+				<!-- <div id="episodeChoice1" class="container is-widescreen notification mb-5">
 					<div>Select a Star Wars Episode</div>
 					<div class="select is-info is-centered">
 						<select name="star-wars-episode" id="star-wars-episode">
@@ -52,13 +60,17 @@
 						 <option value="episode-5">Episode V-The Empire Strikes Back</option>
 						 <option value="episode-6">Episode VI-Return of the Jedi</option>
 						</select>
-					</div>
-				</div>
-			
-				<div id="characterChoice" class="container is-widescreen notification " style="display: none;">
-					<div onclick="toggleDropdown()">Select a Star Wars Character</div>
-					<div class="select is-info is-widescreen">
-						<select id="dropdown" onchange="selectCharacter(this.value)">
+					</div> -->
+			</div>
+
+			<div
+				id="characterChoice"
+				class="container is-widescreen notification"
+				style="display: none"
+			>
+				<div onclick="toggleDropdown()">Select a Star Wars Character</div>
+				<div class="select is-info is-widescreen">
+					<select id="dropdown" onchange="selectCharacter(this.value)">
 						<option value="" selected disabled>Select a character</option>
 						<option value="Luke Skywalker">Luke Skywalker</option>
 						<option value="Darth Vader">Darth Vader</option>
@@ -67,18 +79,20 @@
 						<option value="Yoda">Yoda</option>
 						<option value="R2-D2">R2-D2</option>
 						<option value="C-3PO">C-3PO</option>
-				</select>
+					</select>
 				</div>
-					<div class="container">
-						<div class="col" style="display: none;"><p>New Facts: Because you chose "Luke SkyWalker" we think you should check out this movie:
-							Output:
-							Movie Title
-							Year it was made?
-							Movie Reviews
-						</p></div>
+				<div class="container">
+					<div class="col" style="display: none">
+						<p>
+							New Facts: Because you chose "Luke SkyWalker" we think you should
+							check out this movie: Output: Movie Title Year it was made? Movie
+							Reviews
+						</p>
 					</div>
-			</main>
-			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-			<script src="./Assets/js/script.js"></script>
-		</body>
-	</html>
+				</div>
+			</div>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="./Assets/js/script.js"></script>
+	</body>
+</html>
